@@ -1,0 +1,1 @@
+sudo apt update && sudo apt install -y build-essential clang-21 cmake ninja-build valgrind gdb clang-tidy libgtest-dev libbenchmark-dev
