@@ -103,7 +103,7 @@ int main() {
         auto start_time = std::chrono::high_resolution_clock::now();
         
         MathMatrix mat_c = mat_a + mat_b;
-        mat_c.display();
+        //mat_c.display();
         
         MathMatrix mat_d = std::move(mat_c);
         mat_d.display();
@@ -112,7 +112,7 @@ int main() {
         std::chrono::duration<double, std::milli> elapsed = end_time - start_time;
 
         std::cout << "Operation completed in: " << elapsed.count() << " ms\n";
-        std::cout << "Value at (500, 500): " << mat_d(5, 5) << "\n";
+        std::cout << "Value at (5, 5): " << mat_d(5, 5) << "\n";
 
     } catch (const std::exception& e) {
         std::cerr << "System Error: " << e.what() << "\n";
